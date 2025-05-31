@@ -1,8 +1,10 @@
 name: Build agents
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+     - main
+    
 
 jobs:
   build:
